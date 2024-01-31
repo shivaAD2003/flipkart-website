@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.navbar-link{
+    display: flex;
+column-gap: 20px;
+
+}
+.navbar-links a{
+    text-decoration: none;
+    color: rgb(78, 21, 148);
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: red;
+   
+}
+.navbar-toggle{
+    display: none;
+}
+.side-navbar{
+    background-color: darkblue;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+
+    top: 0;
+    left: -60;
+    padding: 20px;
+    display: none;
+ 
+    
+    
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-link a{
+    color: white;
+    text-decoration: none;
+
+}
+.side-navbar p{
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.header-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.service2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.service2 div{
+   background-color:rgb(240, 226, 200);
+    border-radius: 5px;
+    padding: 10px;
+}
+.new{
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+  
+}
+.new2{
+    position: relative;
+    flex-basis:20% ;
+}
+.new2 button{
+    padding-left: 10Px;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom:5%;
+    margin-top: 10px;
+    color:white;
+    background-color: rgb(42, 20, 109);
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 20px;
+}
+.shiva{
+    padding: 20px;
+    color: red;
+}
+.ads{
+    padding: 20px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    width: 80vw;
+    border-radius: 20px;
+    padding: 11px;
+   border: 3px solid black;
+   margin-bottom: 10px;
+}
+.news button{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+   color: white;
+   background-color: rgb(38, 40, 31); 
+   margin-top: 10px;
+   padding: 40px;
+   word-spacing: 5px;
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.product p{
+    color: red;
+    text-align: center;
+}
+
+.products{
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+}
+.color{
+    background-color:black ;
+    width:50%;
+    height: 400px;
+    color: white;
+    text-indent: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    
+
+    
+
+}
+.color input{
+    display: flex;
+   padding-left: 20px;
+   margin-left: 20px;
+   width: 400px;
+   height: 30px;
+   border-radius: 10px;
+   
+}
+.color p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-indent: 20px;
+    
+}
+.color button{
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:700px) {
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service{
+        display: none;
+    }
+    .service2{
+        flex-direction: column;
+    }
+    
+}
